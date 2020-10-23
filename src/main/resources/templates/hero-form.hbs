@@ -1,0 +1,38 @@
+{{#partial "content"}}
+    <div class="container">
+        <h5>Add Your Hero Team</h5>
+        <hr>
+        <form method="Post" action="/addhero">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="supername" name="supername" placeholder="Enter Hero Name">
+            </div>
+            <div class="form-group">
+                <label for="power">Hero's Super Power</label>
+                <input type="text" class="form-control" id="power" name="power" placeholder="Enter Hero's Power">
+            </div>
+            <div class="form-group">
+                <label for="age">Hero's Age</label>
+                <input type="number" class="form-control" id="age" name="age" placeholder="Enter Hero's Age">
+            </div>
+            <div class="form-group">
+                <label for="weakness">Hero's Weakness</label>
+                <input type="text" class="form-control" id="weakness" name="weakness" placeholder="Enter Hero's Weakness">
+            </div>
+            <div class="for-group">
+                <label for="team">Team</label>
+                <select class="form-control" id="team" name="team">
+                    {{#if teams}}
+                        {{#each teams}}
+                            <option value="{{id}}">{{teanName}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}

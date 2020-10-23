@@ -5,15 +5,15 @@ import java.util.List;
 
 public class Heroes {
     private int id;
-   private String name;
+   private String superName;
    private int age;
    private String superPower;
    private String weakness;
    private int teamId;
 
 
-    public Heroes(String name, int age, String superPower, String weakness, int teamId) {
-        this.name = name;
+    public Heroes(String superName, int age, String superPower, String weakness, int teamId) {
+        this.superName = superName;
         this.age = age;
         this.superPower = superPower;
         this.weakness = weakness;
@@ -29,11 +29,11 @@ public class Heroes {
     }
 
     public String getName() {
-        return name;
+        return superName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String superName) {
+        this.superName = superName;
     }
 
     public int getAge() {
