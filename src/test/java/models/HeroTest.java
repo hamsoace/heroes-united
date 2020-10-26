@@ -20,4 +20,14 @@ public class HeroTest {
     public void getHeroPower(){
         assertEquals("Gadgets", first.getHeroPower());
     }
+
+    @Test
+    public void getSquadId(){
+        assertEquals(1, first.getSquadId());
+    }
+
+    @Test
+    public void getHeroWeakness(){
+        assertEquals("Parent's Death", first.getHeroWeakness());
+    }
 }
