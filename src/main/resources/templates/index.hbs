@@ -2,23 +2,22 @@
 
     <div class="row">
         <div class="col-md-6">
-            {{#if teams}}
-                {{#each teams}}
-                    <p>{{teamName}}</p>
+            {{#if squads}}
+                {{#each squads}}
+                    <p>{{squadName}}</p>
+                    <a href="/squads/{{id}}" class="btn btn-info">Details</a>
                 {{/each}}
             {{/if}}
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-6">
             {{#if heroes}}
                 {{#each heroes}}
-                    <p>{{superName}}</p>
+                    <p>{{heroName}}</p>
+                    <a href="/heroes/{{id}}" class="btn btn-info">Details</a>
                 {{/each}}
             {{/if}}
         </div>
     </div>
-
 
 {{/partial}}
 

@@ -1,0 +1,15 @@
+{{#partial "content"}}
+
+{{#if hero}}
+   <p>{{hero.heroName}}</p>
+   <p>{{hero.heroPower}}</p>
+   <p>{{hero.heroWeakness}}</p>
+   <p>{{hero.age}}</p>
+   <p>{{squad.squadName}}</p>
+   <a href="/deletehero/{{hero.id}}" class="btn btn-danger">Delete</a>
+   <a href="/edithero/{{hero.id}}" class="btn btn-warning">Edit</a>
+{{/if}}
+
+{{/partial}}
+
+{{> layout.hbs}}
