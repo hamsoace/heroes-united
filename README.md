@@ -36,7 +36,7 @@ https://hamsoacehero.herokuapp.com/
 
 ### Database Schema
 
-
+https://ondras.zarovi.cz/sql/demo/
 
 ## How to Set Up
 
