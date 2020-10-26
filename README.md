@@ -12,7 +12,7 @@ https://github.com/hamsoace/heroes-united
 
 ## Project screenshot
 
-
+![](Screenshot.png)
 
 ## Live link
 
@@ -36,7 +36,7 @@ https://hamsoacehero.herokuapp.com/
 
 ### Database Schema
 
-https://ondras.zarovi.cz/sql/demo/
+![](schema.png)
 
 ## How to Set Up
 
