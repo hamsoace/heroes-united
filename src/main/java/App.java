@@ -26,11 +26,11 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
-        String connectionString = "jdbc:postgresql://localhost:5432/moringa";
-        Connection con;
-        Sql2o sql2o = new Sql2o(connectionString, "moringa", "Access");
-//        String connectionString = "jdbc:postgresql://ec2-54-160-18-230.compute-1.amazonaws.com:5432/dfoonudsrjcubk"; //!
-//        Sql2o sql2o = new Sql2o(connectionString, "rirffgosexpsjs", "98f53c6deed31854ca59a5ce61bce0a749c32aa6fd36100ac453f9d9fd0fdc6c"); //!
+//        String connectionString = "jdbc:postgresql://localhost:5432/moringa";
+//        Connection con;
+//        Sql2o sql2o = new Sql2o(connectionString, "moringa", "Access");
+        String connectionString = "jdbc:postgresql://ec2-54-160-18-230.compute-1.amazonaws.com:5432/dfoonudsrjcubk"; //!
+        Sql2o sql2o = new Sql2o(connectionString, "rirffgosexpsjs", "98f53c6deed31854ca59a5ce61bce0a749c32aa6fd36100ac453f9d9fd0fdc6c"); //!
         Sql2oSquadDAO squadDAO = new Sql2oSquadDAO(sql2o);
         Sql2oHeroDAO heroDAO = new Sql2oHeroDAO(sql2o);
         Map<String, Object> model = new HashMap<>();
